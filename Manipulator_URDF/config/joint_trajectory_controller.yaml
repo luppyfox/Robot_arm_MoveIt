@@ -1,8 +1,36 @@
 #Instead of using TAB for indentation, use two spaces at the place of one TAB
 #Controller to control robot arm joints
+# gazebo_ros_control:   
+#   pid_gains:
+#     joint2:
+#       p: 0.0
+#       i: 0.0
+#       d: 0.0
+#     joint3:
+#       p: 0.0
+#       i: 0.0
+#       d: 0.0
+#     joint4:
+#       p: 0.0
+#       i: 0.0
+#       d: 0.0
+#     joint5:
+#       p: 0.0
+#       i: 0.0
+#       d: 0.0
+#     joint6:
+#       p: 0.0
+#       i: 0.0
+#       d: 0.0
+#     joint7:
+#       p: 0.0
+#       i: 0.0
+#       d: 0.0
+
 robot_arm_controller:
   type: "position_controllers/JointTrajectoryController"
-  joints: [joint1, joint2, joint3, joint4, joint5, joint6]
+  joints: [joint2, joint3, joint4, joint5, joint6]
+      
 #Controller to control end effector joints
 hand_ee_controller:
   type: "position_controllers/JointTrajectoryController"

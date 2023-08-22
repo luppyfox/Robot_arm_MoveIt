@@ -194,6 +194,8 @@ arm:
     - AITstar
     - ABITstar
     - BITstar
+  projection_evaluator: joints(joint2,joint3)
+  longest_valid_segment_fraction: 0.005
 hand:
   planner_configs:
     - AnytimePathShortening
