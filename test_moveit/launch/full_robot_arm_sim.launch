@@ -11,4 +11,7 @@
 		<arg name="rviz_config" value="$(find movit_robot_arm_sim)/launch/moveit.rviz"/>
 	</include>
 
+	<!-- Launch Convert message Node -->
+	<include file = "$(find convert_msg)/launch/convert_msg.launch" />
+	
 </launch>

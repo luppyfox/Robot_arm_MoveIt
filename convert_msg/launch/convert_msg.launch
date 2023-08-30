@@ -1,0 +1,4 @@
+<launch>
+    <!-- Launch Convert message Node -->
+	<node name="convert_node" pkg="convert_msg" type="joint_state_to_pos_array" output="screen"></node>
+</launch>
